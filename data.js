@@ -8,7 +8,7 @@ window.SITE = {
     {
       name: "Absolute Cooked",
       description: "A social media brand that shares cooking content.",
-      url: "cooked.html",                        // relative path or full URL; "" = non-clickable card
+      url: "cooked",                             // relative path or full URL; "" = non-clickable card
       image: "img/absolute-cooked.png",
       imagePosition: "50% 38%",                  // CSS object-position: crop of the square artwork
       category: "Social Media",

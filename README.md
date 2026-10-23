@@ -13,7 +13,7 @@ Needed images: `img/absolute-cooked.png` (card art), `img/absco.png` (logo on th
 4. Wait about a minute. Your site is live at `https://<username>.github.io/<repo>/`.
 
 ## Add a business or brand
-Open `data.js`, copy one block inside `businesses` or `brands`, paste it after the last block (add a comma), and change the values. Use relative links such as `cooked.html` (never `/cooked.html`, which breaks on GitHub Pages project sites). `url: ""` makes a non-clickable card.
+Open `data.js`, copy one block inside `businesses` or `brands`, paste it after the last block (add a comma), and change the values. Use relative links without the extension, such as `cooked` for `cooked.html` (GitHub Pages serves it at `/cooked`). Never start with `/`, which breaks on GitHub Pages project sites. `url: ""` makes a non-clickable card.
 
 ## Keyboard
 `/` or Ctrl/Cmd+K opens search across everything. `1` to `9` opens the matching business. The link page has the same shortcuts for its links.
