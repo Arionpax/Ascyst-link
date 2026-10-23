@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Absolute Cooked: links</title>
+<meta name="description" content="Absolute Cooked: store and social links.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Absolute Cooked">
+<meta property="og:description" content="Store and social links for Absolute Cooked.">
+<meta property="og:image" content="../img/absolute-cooked.webp">
+<meta name="theme-color" content="#1b2610">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{--accent:#f4c430;--bg:#1b2610;--fg:#f3f0e2;--muted:#a3ad8c;--line:#38472a;--dot:#27351a;--r:8px;
+--sans:"Inter Tight",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+*{box-sizing:border-box;margin:0}
+body{min-height:100vh;background:var(--bg);color:var(--fg);font:400 16px/1.5 var(--sans);-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(var(--dot) 1px,transparent 1px);background-size:24px 24px}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+main{max-width:480px;margin:0 auto;padding:56px 20px 40px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.logo{width:96px;height:96px;border-radius:50%;object-fit:cover;border:1px solid var(--line);background:var(--dot)}
+h1{margin-top:20px;font-size:24px;font-weight:600;letter-spacing:-.02em}
+.tag{margin-top:6px;color:var(--muted);font-size:15px;max-width:40ch}
+.live{margin-top:14px;font:400 12px var(--mono);color:var(--accent);display:flex;align-items:center;gap:6px}
+.live i{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:p 2s ease-in-out infinite}
+@keyframes p{50%{opacity:.25}}
+.links{width:100%;margin-top:32px;display:grid;gap:12px}
+.group{font:400 12px var(--mono);color:var(--muted);text-align:left;margin-top:12px}
+.btn{display:flex;justify-content:space-between;align-items:center;width:100%;padding:15px 18px;border:1px solid var(--line);border-radius:var(--r);font-weight:500;transition:border-color .2s,color .2s}
+.btn svg{opacity:.7;transition:transform .2s}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn:hover svg{transform:translate(2px,-2px)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#1b2610}
+.btn.primary:hover{color:#1b2610;filter:brightness(1.06)}
+.back{margin-top:40px;font:400 12px var(--mono);color:var(--muted)}
+.back:hover{color:var(--accent)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="../img/absolute-cooked.webp" alt="Absolute Cooked logo" width="96" height="96" style="object-position:50% 38%">
+  <h1>Absolute Cooked</h1>
+  <p class="tag">Pizza, cooked properly. Shop the store or follow along.</p>
+  <p class="live"><i></i>Currently focused</p>
+  <nav class="links" id="links" aria-label="Absolute Cooked links"></nav>
+  <a class="back" href="../">&larr; back to ASCYST</a>
+</main>
+<script>
+/* Edit this list. group: section label, primary: true = accent-filled button */
+var LINKS = [
+  { group: "Store",  label: "Affiliate store", url: "https://store.ascyst.com", primary: true },
+  { group: "Follow", label: "Instagram", url: "https://instagram.com/absolute.cooked" },
+  { group: "Follow", label: "YouTube",   url: "https://youtube.com/@absolute.cookedd" },
+  { group: "Follow", label: "Facebook",  url: "https://www.facebook.com/share/1A28kVJjZH/" }
+];
+var ARROW = '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg>';
+var box = document.getElementById("links"), last = "";
+document.querySelector(".logo").onerror = function () { this.style.visibility = "hidden"; };
+LINKS.forEach(function (l) {
+  if (l.group !== last) { var g = document.createElement("p"); g.className = "group"; g.textContent = l.group; box.appendChild(g); last = l.group; }
+  var a = document.createElement("a");
+  a.className = "btn" + (l.primary ? " primary" : ""); a.href = l.url; a.target = "_blank"; a.rel = "noopener noreferrer";
+  a.innerHTML = "<span></span>" + ARROW; a.firstChild.textContent = l.label;
+  box.appendChild(a);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Absolute Cooked | Links</title>
+<meta name="description" content="Absolute Cooked: store and social channels in one place.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Absolute Cooked">
+<meta property="og:description" content="Store and social channels for Absolute Cooked.">
+<meta property="og:image" content="img/absco.png">
+<meta name="theme-color" content="#090b06">
+<link rel="icon" href="img/absolute-cooked.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+:root{--bg:#090b06;--y:#f4c430;--olive:#3c4a1a;--t:#f1f0e4;--m:#9a9f87;--line:rgba(241,240,228,.1);--yl:rgba(244,196,48,.28);
+--sans:Inter,system-ui,sans-serif;--head:Outfit,Inter,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0}
+html{background:var(--bg)}
+body{min-height:100vh;color:var(--t);font:400 16px/1.5 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden;
+background:radial-gradient(70% 45% at 50% -5%,rgba(86,106,36,.55),transparent 70%),radial-gradient(60% 25% at 50% 105%,rgba(244,196,48,.12),transparent 70%),var(--bg)}
+.gridbg{position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(244,196,48,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(244,196,48,.05) 1px,transparent 1px);background-size:44px 44px;
+-webkit-mask-image:radial-gradient(75% 60% at 50% 20%,#000,transparent);mask-image:radial-gradient(75% 60% at 50% 20%,#000,transparent)}
+a,button{color:inherit;text-decoration:none;font:inherit}
+:focus-visible{outline:2px solid var(--y);outline-offset:3px;border-radius:10px}
+.mono{font-family:var(--mono)}
+main{position:relative;max-width:520px;margin:0 auto;padding:max(20px,env(safe-area-inset-top)) 20px 48px}
+.top{display:flex;justify-content:space-between;align-items:center;height:44px;font:400 12px var(--mono);color:var(--m)}
+.top a:hover{color:var(--y)}
+.status{display:flex;align-items:center;gap:8px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--y);box-shadow:0 0 10px var(--y);animation:pulse 2s ease-in-out infinite}
+.tools{display:flex;gap:8px}
+.tb{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.03);color:var(--t);cursor:pointer;font:400 12px var(--mono);transition:border-color .2s,color .2s}
+.tb:hover{border-color:var(--yl);color:var(--y)}
+kbd{font:500 11px/1 var(--mono);padding:4px 6px;border:1px solid var(--line);border-radius:5px;color:var(--m);background:rgba(0,0,0,.25)}
+.id{padding:44px 0 8px;text-align:center}
+.logo{position:relative;width:116px;height:116px;margin:0 auto;padding:7px;border-radius:26px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.01));border:1px solid var(--line);box-shadow:0 0 70px -10px rgba(244,196,48,.25)}
+.logo img{width:100%;height:100%;object-fit:cover;border-radius:19px;display:block;background:#1f2a12}
+.logo b{position:absolute;width:14px;height:14px;border:2px solid var(--y)}
+.logo .a{top:-6px;left:-6px;border-right:0;border-bottom:0;border-radius:6px 0 0 0}
+.logo .b{top:-6px;right:-6px;border-left:0;border-bottom:0;border-radius:0 6px 0 0}
+.logo .c{bottom:-6px;left:-6px;border-right:0;border-top:0;border-radius:0 0 0 6px}
+.logo .d{bottom:-6px;right:-6px;border-left:0;border-top:0;border-radius:0 0 6px 0}
+h1{font:600 36px/1.05 var(--head);letter-spacing:-.03em;margin-top:26px}
+.tag{color:var(--m);margin-top:10px}
+.chips{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:6px 11px;border:1px solid var(--line);border-radius:7px;font:400 12px var(--mono);color:var(--m)}
+.chip.live{color:var(--y);border-color:var(--yl);background:rgba(244,196,48,.06)}
+h2{display:flex;align-items:center;gap:12px;margin:34px 0 12px;font:500 12px var(--mono);color:var(--m)}
+h2::after{content:"";flex:1;height:1px;background:var(--line);order:1}
+h2 span{order:2;color:rgba(154,159,135,.6)}
+.ic{width:40px;height:40px;flex:none;display:grid;place-items:center;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+small{display:block;font:400 12.5px var(--mono);color:var(--m);overflow-wrap:anywhere}
+.feat,.row{position:relative;display:block;isolation:isolate;overflow:hidden;transition:background .25s,border-color .25s,transform .25s cubic-bezier(.2,.7,.2,1)}
+.feat::after,.row::after{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;background:radial-gradient(280px circle at var(--x,50%) var(--y2,50%),rgba(244,196,48,.14),transparent 70%)}
+.feat:hover::after,.row:hover::after{opacity:1}
+.feat{padding:18px;border-radius:14px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015))}
+.feat::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;background:conic-gradient(from var(--a),transparent 0 70%,var(--y) 90%,transparent);animation:spin 6s linear infinite;
+-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+.feat:hover{transform:translateY(-2px)}
+.fh{display:flex;justify-content:space-between;align-items:center;font:400 11.5px var(--mono);color:var(--m);margin-bottom:16px}
+.fb{display:flex;gap:14px;align-items:center}
+.fb b,.row b{display:block;font:500 18px/1.2 var(--head);letter-spacing:-.01em}
+.cta{display:flex;justify-content:space-between;align-items:center;margin-top:18px;height:46px;padding:0 16px;border-radius:9px;background:var(--y);color:#15170a;font:500 15px var(--head);transition:filter .2s}
+.feat:hover .cta{filter:brightness(1.08)}
+.rows{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.02)}
+.row{display:flex;align-items:center;gap:14px;padding:14px 16px;border-top:1px solid var(--line);box-shadow:inset 0 0 0 0 var(--y)}
+.row:first-child{border-top:0}
+.row:hover{background:rgba(244,196,48,.04);box-shadow:inset 2px 0 0 0 var(--y)}
+.n{font:400 12px var(--mono);color:rgba(154,159,135,.6);width:18px;transition:color .2s}
+.row:hover .n{color:var(--y)}
+.t{flex:1;min-width:0}
+.go{color:var(--m);font-size:16px;transition:transform .25s,color .25s}
+.row:hover .go{color:var(--y);transform:translate(2px,-2px)}
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font:400 12px var(--mono);color:var(--m)}
+footer a{border-bottom:1px solid var(--line)}footer a:hover{color:var(--y)}
+dialog{margin:12vh auto 0;width:min(560px,calc(100% - 32px));padding:0;border:1px solid var(--yl);border-radius:14px;background:#0d1008;color:var(--t);box-shadow:0 40px 90px -20px #000,0 0 80px -30px rgba(244,196,48,.4)}
+dialog::backdrop{background:rgba(5,7,3,.7);backdrop-filter:blur(6px)}
+.pin{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);color:var(--m)}
+#q{flex:1;min-width:0;background:none;border:0;outline:0;color:var(--t);font:400 16px var(--sans)}
+#res{list-style:none;padding:8px;max-height:50vh;overflow:auto}
+#res li{display:flex;align-items:center;gap:12px;padding:10px;border-radius:9px;cursor:pointer}
+#res li small{margin-top:1px}
+#res li.on{background:rgba(244,196,48,.1);box-shadow:inset 2px 0 0 var(--y)}
+#res .grp{margin-left:auto;font:400 11px var(--mono);color:var(--m)}
+#res .none{color:var(--m);cursor:default;justify-content:center;padding:22px}
+.pf{display:flex;gap:14px;padding:10px 16px;border-top:1px solid var(--line);font:400 11.5px var(--mono);color:var(--m)}
+.toast{position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom));transform:translate(-50%,16px);opacity:0;padding:10px 16px;border-radius:9px;font:400 13px var(--mono);background:#15190c;color:var(--y);border:1px solid var(--yl);transition:.3s;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.rise{opacity:0;transform:translateY(12px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i,0)*70ms)}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes spin{to{--a:360deg}}
+@keyframes pulse{50%{opacity:.3}}
+@media (hover:none){kbd,.hint{display:none}}
+@media (max-width:380px){h1{font-size:30px}.tb span{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rise{opacity:1;transform:none}.feat::before{background:var(--yl)}}
+</style>
+</head>
+<body>
+<div class="gridbg" aria-hidden="true"></div>
+<main>
+  <header class="top rise">
+    <span class="status"><i class="dot"></i>online &middot; <a href="./">ascyst</a></span>
+    <div class="tools">
+      <button class="tb" id="open" type="button" aria-label="Search links"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span><kbd>/</kbd></button>
+      <button class="tb" id="share" type="button" aria-label="Share this page"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span>Share</span></button>
+    </div>
+  </header>
+  <section class="id">
+    <div class="logo rise" style="--i:1"><img id="avatar" src="img/absco.png" alt="Absolute Cooked chef logo" width="116" height="116"><b class="a"></b><b class="b"></b><b class="c"></b><b class="d"></b></div>
+    <h1 class="rise" style="--i:2">Absolute Cooked</h1>
+    <p class="tag rise" style="--i:3">Find us everywhere.</p>
+    <div class="chips rise" style="--i:4"><span class="chip live"><i class="dot"></i>Currently focused</span><span class="chip">Cooking Channel</span></div>
+  </section>
+  <div id="groups"></div>
+  <footer class="rise" style="--i:12"><span>Part of <a href="./">ASCYST</a></span><span class="hint">Press 1&ndash;4 to open &middot; / to search</span></footer>
+</main>
+
+<dialog id="pal" aria-label="Search links">
+  <div class="pin"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="text" placeholder="Search channels" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="res"><kbd>esc</kbd></div>
+  <ul id="res" role="listbox"></ul>
+  <div class="pf hint"><span>&uarr;&darr; navigate</span><span>&crarr; open</span></div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite">Link copied</div>
+
+<script>
+/* ====== EDIT HERE: add, remove or reorder links (primary: true = featured module) ====== */
+const GROUPS = [
+  { title: "Store", links: [
+    { label: "Affiliate store", note: "store.ascyst.com", url: "https://store.ascyst.com", icon: "bag", primary: true }
+  ]},
+  { title: "Follow", links: [
+    { label: "Instagram", note: "@absolute.cooked",  url: "https://instagram.com/absolute.cooked", icon: "instagram" },
+    { label: "YouTube",   note: "@absolute.cookedd", url: "https://youtube.com/@absolute.cookedd", icon: "youtube" },
+    { label: "Facebook",  note: "Follow our page",   url: "https://www.facebook.com/share/1A28kVJjZH/", icon: "facebook" }
+  ]}
+];
+
+const $ = s => document.querySelector(s);
+const bag = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 13H5L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>`;
+const icon = n => n === "bag" ? `<span style="color:#f4c430">${bag}</span>` : `<img src="https://cdn.simpleicons.org/${n}/f1f0e4" alt="" width="20" height="20">`;
+const ALL = GROUPS.flatMap(g => g.links.map(l => Object.assign(l, { group: g.title })));
+const pad = n => String(n).padStart(2, "0");
+const attrs = l => `href="${l.url}" target="_blank" rel="noopener noreferrer"`;
+
+let i = 5;
+$("#groups").innerHTML = GROUPS.map(g => {
+  const feat = g.links.filter(l => l.primary).map(l => `
+    <a class="feat rise" style="--i:${i++}" ${attrs(l)}>
+      <div class="fh"><span>featured</span><kbd>${ALL.indexOf(l) + 1}</kbd></div>
+      <div class="fb"><span class="ic">${icon(l.icon)}</span><div><b>${l.label}</b><small>${l.note}</small></div></div>
+      <span class="cta">Open ${g.title.toLowerCase()}<span aria-hidden="true">&#8599;</span></span>
+    </a>`).join("");
+  const rows = g.links.filter(l => !l.primary).map(l => `
+    <a class="row" ${attrs(l)}>
+      <span class="n">${pad(ALL.indexOf(l) + 1)}</span><span class="ic">${icon(l.icon)}</span>
+      <span class="t"><b>${l.label}</b><small>${l.note}</small></span><kbd>${ALL.indexOf(l) + 1}</kbd><span class="go" aria-hidden="true">&#8599;</span>
+    </a>`).join("");
+  return `<h2 class="rise" style="--i:${i++}">${g.title.toLowerCase()}<span>${pad(g.links.length)}</span></h2>${feat}${rows ? `<div class="rows rise" style="--i:${i++}">${rows}</div>` : ""}`;
+}).join("");
+
+/* cursor spotlight */
+document.querySelectorAll(".feat,.row").forEach(a => a.addEventListener("pointermove", e => {
+  const r = a.getBoundingClientRect();
+  a.style.setProperty("--x", e.clientX - r.left + "px"); a.style.setProperty("--y2", e.clientY - r.top + "px");
+}));
+
+/* avatar fallback */
+const av = $("#avatar");
+av.onerror = () => { av.onerror = null; av.src = "img/absolute-cooked.png"; };
+
+/* command palette */
+const pal = $("#pal"), q = $("#q"), res = $("#res");
+let cur = [], act = 0;
+const go = l => window.open(l.url, "_blank", "noopener,noreferrer");
+function draw() {
+  const v = q.value.trim().toLowerCase();
+  cur = ALL.filter(l => (l.label + " " + l.note + " " + l.group).toLowerCase().includes(v));
+  act = Math.min(act, Math.max(cur.length - 1, 0));
+  res.innerHTML = cur.length ? cur.map((l, k) => `<li role="option" aria-selected="${k === act}" data-k="${k}" class="${k === act ? "on" : ""}"><span class="ic">${icon(l.icon)}</span><span>${l.label}<small>${l.note}</small></span><span class="grp">${l.group.toLowerCase()}</span></li>`).join("") : `<li class="none">No matching channel</li>`;
+  const on = res.querySelector(".on"); if (on) on.scrollIntoView({ block: "nearest" });
+}
+function openPal() { q.value = ""; act = 0; draw(); pal.showModal(); q.focus(); }
+$("#open").addEventListener("click", openPal);
+q.addEventListener("input", () => { act = 0; draw(); });
+q.addEventListener("keydown", e => {
+  if (e.key === "ArrowDown") { e.preventDefault(); act = Math.min(act + 1, cur.length - 1); draw(); }
+  else if (e.key === "ArrowUp") { e.preventDefault(); act = Math.max(act - 1, 0); draw(); }
+  else if (e.key === "Enter" && cur[act]) { go(cur[act]); pal.close(); }
+});
+res.addEventListener("click", e => { const li = e.target.closest("li[data-k]"); if (li) { go(cur[+li.dataset.k]); pal.close(); } });
+pal.addEventListener("click", e => { if (e.target === pal) pal.close(); });
+document.addEventListener("keydown", e => {
+  if (pal.open || e.altKey || e.shiftKey) return;
+  if (e.key === "/" || (e.key.toLowerCase() === "k" && (e.metaKey || e.ctrlKey))) { e.preventDefault(); openPal(); return; }
+  if (!e.metaKey && !e.ctrlKey && /^[1-9]$/.test(e.key) && ALL[e.key - 1]) go(ALL[e.key - 1]);
+});
+
+/* share */
+const toast = $("#toast");
+$("#share").addEventListener("click", async () => {
+  const d = { title: "Absolute Cooked", url: location.href };
+  try {
+    if (navigator.share) { await navigator.share(d); return; }
+    await navigator.clipboard.writeText(d.url);
+    toast.classList.add("on"); setTimeout(() => toast.classList.remove("on"), 1800);
+  } catch (e) {}
+});
+</script>
+</body>
+</html>
